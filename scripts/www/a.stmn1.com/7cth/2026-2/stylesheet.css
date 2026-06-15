@@ -1,0 +1,585 @@
+@namespace h "http://www.w3.org/1999/xhtml";
+body
+{
+max-width: 96%;    
+margin:0 auto;
+padding:0
+	font-family: 'Microsoft YaHei',"Apple LiGothic Medium", Tahoma, Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", sans-serif;
+	font-size: 1.6em;
+	color: #2A2A2A;
+	background-color: #ffffff;
+	background-repeat:repeat-x;
+}
+span {
+    color: gray;
+}
+p{font-size: 1.2em;}
+
+hr {
+    margin: 10px 0px 10px 0px;
+    border-top: 1px solid #008000;
+}
+
+.AA1 {
+    text-align:center;
+    font-size:1.3em;
+    color:#FFFFFF;
+    FONT-WEIGHT: bold;
+    padding-top: 3px;
+    padding-bottom:5px;
+    background-color:#4ACA6D;
+	text-decoration: none;
+}
+.AA2 { 
+color : #000000; 
+text-align : center;
+font-weight : bolder;
+font-size : 1.3em; 
+} 
+.AA3 { 
+color : #000000;
+padding-left : 0.5em;
+text-indent : 1em; 
+font-size : 1.2em; 
+} 
+.AA3_1 { 
+color : #000000;
+padding-left : 0.5em;
+text-indent : 1em; 
+font-size : 1.1em; 
+} 
+.calibre {
+    display: block;
+    font-family: "Microsoft YaHei";
+    font-size: 1.2em;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: left;
+    padding-right: 0
+}
+
+.calibre4 {
+    color: inherit;
+    cursor: inherit;
+    text-decoration: inherit
+}
+
+/*顶部底部的横线*/
+.calibre6 {
+    border: 1px inset;
+    color: gray;
+    display: block;
+    height: 2px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em
+}
+
+/*英文总题*/
+.calibre_e_general_subject_1 {
+    color: gray;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    text-align: center
+}
+
+/*英文总题*/
+.calibre_e_general_subject_2 {
+    color: green;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    text-align: center
+}
+
+/*中文篇题*/
+.calibre_content_title {
+    color: green;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    text-align: center
+}
+
+/*英文篇题*/
+.calibre_e_content_title {
+    color: green;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    text-align: center
+}
+
+/*中英对照，英文的篇题，每个页面上的总题*/
+.calibre_ce_content_title,
+.calibre_zongti {
+    color: gray;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    text-align: center
+}
+
+/*index页面的特会和总题名称，用于<p>标签*/
+.calibre_index_title1,
+.calibre_index_title2 {
+    color: green;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.67em;
+    text-align: center
+}
+
+/*index页面中的篇题，用于<p>标签*/
+.calibre_index_chapter {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 8px
+}
+
+/*index页面中的类别（纲目，中英，晨兴，听抄），用于<p>标签*/
+.calibre_index_category {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8px
+}
+
+/*index各种超链接，用于<a>标签中*/
+.calibre_hyperlinks {
+    color: #2040A0;
+    cursor: pointer;
+    text-decoration: none
+}
+
+/*中文纲目的大点*/
+.calibre_text_dadian {
+    display: block;
+    font-size: 1.2em;
+    font-family: "楷体", "楷体_GB2312", serif;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*听抄的大点*/
+.calibre_text_abs_dadian {
+    display: block;
+    font-weight: bold;
+    color: Navy;
+    font-size: 1.2em;
+    font-family: "楷体", "楷体_GB2312", serif;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*英文纲目的大点：罗马数字*/
+.calibre_e_text_dadian {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*中英对照中，英文纲目的大点：罗马数字*/
+.calibre_ce_text_dadian {
+    display: block;
+    color: gray;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*中英对照中，英文纲目的其他点*/
+.calibre_ce_text,
+.calibre_ce_text_dadian,
+.calibre_ce_text_zhongdian,
+.calibre_ce_text_xiaodian,
+.calibre_ce_text_zimudian,
+.calibre_ce_text_kuohaodian {
+    display: block;
+    color: gray;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_zhongdian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_abs_zhongdian {
+    display: block;
+    font-weight: bold;
+    color: Navy;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_e_text_zhongdian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_xiaodian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_abs_xiaodian {
+    display: block;
+    font-weight: bold;
+    color: Navy;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_e_text_xiaodian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_zimudian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_abs_zimudian {
+    display: block;
+    font-weight: bold;
+    color: Navy;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_e_text_zimudian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_kuohaodian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_text_abs_kuohaodian {
+    display: block;
+    font-weight: bold;
+    color: Navy;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_e_text_kuohaodian {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*“读经”和听抄的说明*/
+.calibre_text_verse,
+.calibre_text_abs_shuoming {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 0.9em;
+    margin-top: 1em
+}
+
+/*经文内容*/
+.calibre_verse {
+    color: #000000;
+    display: block;
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 0;
+    font-size: 1.2em;
+    margin-top: 0.1em
+}
+
+.calibre_e_text_verse {
+    color: gray;
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.2em;
+    margin-top: 1em
+}
+
+.calibre_h2 {
+    color: red;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    text-align: center
+}
+
+/*听抄内容*/
+.calibre_text,
+.calibre_text_abs {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    text-indent: 1em;
+	font-size: 1.2em;
+}
+
+.calibre_text_hymns {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    text-align: center
+}
+
+/*介言标题*/
+.calibre_text_jy {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*晨兴页面的纲目和晨兴导航*/
+.calibre_text_gangmu_chenxing {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*晨兴页面的纲目对应的周数*/
+.calibre_text_gangmu_wn {
+    display: block;
+    font-weight: bold;
+    color: green;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*晨兴页面的晨兴对应的周数*/
+.calibre_text_chenxing_wn {
+    display: block;
+    color: green;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*晨兴页面的晨兴正文对应的周数*/
+.calibre_text_chenxing_content_wn {
+    display: block;
+    color: red;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+/*晨兴页面的晨兴正文 晨兴喂养*/
+.calibre_text_chenxing_content_wyxd {
+    display: block;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+}
+
+/*晨兴页面的晨兴正文、经文*/
+.calibre_text_chenxing_content {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.2em;
+    margin-top: 1em;
+    text-indent: 1em
+}
+
+/*晨兴页面的晨兴正文 晨兴喂养背景框*/
+.calibre7 {
+    /*font-size: medium;*/
+    background-color: rgba(249, 249, 249, 0.5);
+    padding: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #cccccc;
+    /*color: #000000;*/
+}
+
+.calibre_text_verse_outline {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+}
+
+.calibre_bold {
+    font-weight: bold
+}
+
+.aside_fnt {
+    display: none;
+}
+
+/*index页面的每个篇题下的超链接块，用于<p>标签中*/
+.nav {
+    display: block;
+}
+
+/*页面的每个篇题下的超链接块，用于<p>标签中*/
+.nav_center {
+    display: block;
+    text-align: center
+}
+
+/*index页面之下点击回到顶部，用于<div>标签中*/
+.nav_right {
+    display: block;
+    text-align: right
+}
+
+/* 经文展开/卷起：点击“展开经文”，每次只展开一个 */
+/* 2026-2 的经文在 <aside epub:type="footnote">...</aside> 中 */
+aside[epub\:type="footnote"] {
+    display: none;
+    background: #fdfcfb;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    padding: 0.4em 0.6em;
+    margin: 0.4em 0 0.8em 0;
+    max-height: 350px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+aside[epub\:type="footnote"].is-open {
+    display: block;
+}
+
+/* 把脚注图标变成“展开经文”文字按钮 */
+a.duokan-footnote {
+    display: inline-block;
+    margin-left: 0.4em;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+a.duokan-footnote img {
+    display: none;
+}
+
+a.duokan-footnote::after {
+    content: "展开经文";
+    color: #FF4500;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 0.15em 0.55em;
+    border: 1px solid #FF4500;
+    border-radius: 999px;
+    background: rgba(255, 69, 0, 0.06);
+}
+
+a.duokan-footnote:hover::after {
+    background: rgba(255, 69, 0, 0.12);
+}
